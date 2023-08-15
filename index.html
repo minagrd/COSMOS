@@ -81,22 +81,20 @@
                 padding-bottom:0px;
                 border-width: 2px;
                 border-color: #1b212b ;
-                border-style:solid;}
+                border-style:solid;
+            border-radius: 5px;}
             .enjtext {font-size: 51px;
                 padding-top:5px;
                 font-weight: bold;
                 text-transform: uppercase;
-                padding-left:20px;
                 line-height: 0.5;}
             .size {  width: 55%;}
             .pack {font-size: 24px;
             line-height: 0.2;
-            padding-left: 20px;
             color: #A9B5CC;}
             .enjsmalltxt {font-size: 22.66px;
             text-transform: uppercase;
             font-weight:lighter;
-            padding-left:20px;
             line-height: 0.5;}
             
             /*footer*/
@@ -118,6 +116,49 @@
               /*hover*/
                 a:hover {
                 color:white;}
+            
+                /*mobile fix*/
+                    .mobileenjoybutton {background-color: #140314;
+                        margin-top:20px;
+                align-items: center;
+                padding-bottom:0px;
+                border-width: 2px;
+                border-color: #1b212b ;
+                border-style:inset;
+                border-radius: 5px;}
+                .mobileenjtext {font-size: 51px;
+                padding-top:5px;
+                font-weight: bold;
+                text-transform: uppercase;
+              
+                line-height: 0.8;}
+                .mobileenjsmalltxt {font-size: 22.66px;
+                text-transform: uppercase;
+                font-weight:lighter;
+          
+                line-height: 0.8;}
+                .button {background-color: #272b35;
+                    color: #A9B5CC;
+                    border-color: #141922;
+                    border-style: outset;
+                    border-width: 5px;}
+                .buttonlarge {background-color:#2d333d;
+                    color: #A9B5CC;}
+
+
+                @media screen and (max-width: 480px) {
+                            #enjoyrow {
+                                display: none;
+                            }
+                            #control {
+                                visibility: hidden;
+                            }
+                        }
+                @media screen and (min-width: 992px) {
+                            #mobile {
+                                display: none;
+                            } }
+                        
         </style>
     </head>
 
@@ -407,22 +448,25 @@
                             </div>
                             
                         </div>
-                        <a class="carousel-control-prev leftt " href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    
+                        <a  id="control"class="carousel-control-prev leftt " href="#carouselExampleIndicators" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next rightt" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    
+                        <a id="control" class="carousel-control-next rightt" href="#carouselExampleIndicators" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
+
                     </div>
             </section>
 
             <!--enjoy-section-->
             <section>
-                <div class="container pt-5 d-lg-block d-md-none d-sm-none">
+                <div id="enjoyrow" class="container pt-5 d-lg-block d-md-none">
                     <div class="row  pt-2 align-items-center">
-                        <div class="col-lg-2 col-md-2 col-sm-1">
+                        <div class="col-lg-2 col-md-2 col-sm-3">
                             <img class="size" src="enjoy/pack.png" alt="Minimalist vector image of a red luggage.">
                         </div>
 
@@ -430,7 +474,7 @@
                                 <img src="enjoy/arrow.png" alt="Minimalist vector image of a white arrow heading right.">
                             </div>
 
-                        <div class="col-lg-2 col-md-2 col-sm-1">
+                        <div class="col-lg-2 col-md-2 col-sm-3">
                             <img class="size" src="enjoy/fly.png" alt="Minimalist vector image of a blue spaceship.">
                         </div>
 
@@ -445,19 +489,21 @@
                             </div>
                         <div class="col-lg-3 col-md-3 col-sm-1">
                             <div class="enjoy p-4 pb-0">
+                                <a href="index.html" class="btn buttonlarge">
                                 <p class="enjtext">
                                     enjoy
                                 </p>
                                 <p class="enjsmalltxt">
                                     a new world!
                                 </p>
+                                </a>
                             </div>
                         </div>
                         
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col-lg-3 col-md-3">
                             <a href="index.html" class="pack ">
                                 <b class="closer">
                                     p
@@ -484,6 +530,53 @@
                             </a>
                         </div>
                             
+                    </div>
+                </div>
+            </section>
+
+            <!--MOBILE-ENJOY-->
+            <section>
+                <div id="mobile" class="container pt-5">
+                    <div class="row  pt-2 align-items-center">
+                        <div class="col-lg-2 col-md-2 col-sm-12">
+                            <img class="pl-4" src="enjoy/pack-mobile.png" alt="Minimalist vector image of a red luggage.">
+                            <a href="index.html" class="pack ">
+                                <b class="closer">
+                                    p
+                                </b>
+                                ack
+                            </a>
+                                <img src="enjoy/arrow-mobile.png" alt="Minimalist vector image of a white arrow heading right.">
+        
+                            <img class="pl-4" src="enjoy/fly-mobile.png" alt="Minimalist vector image of a blue spaceship.">
+                            <a href="index.html" class="pack ">
+                                <b class="closer">
+                                    f
+                                </b>
+                                ly
+                            </a>
+                                <img src="enjoy/arrow-mobile.png" alt="Minimalist vector image of a white arrow heading right.">
+    
+                            <img class="pl-4" src="enjoy/live-mobile.png" alt="Minimalist vector image of a green leaf.">
+                            <a href="index.html" class="pack "> 
+                                <b class="closer">
+                                    l
+                                </b>
+                                ive
+                            </a>
+                                <img src="enjoy/arrow-mobile.png" alt="Minimalist vector image of a white arrow heading right.">
+                            <div class="mobileenjoybutton pl-5 p-4 pb-0 align-items-center"> 
+                                <a href="index.html" class=" ml-5 btn button"> 
+                                <p class="mobileenjtext">
+                                    enjoy
+                                </p>
+                                <p class="mobileenjsmalltxt">
+                                    a new world!
+                                </p>
+                                </a>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </section>
